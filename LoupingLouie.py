@@ -63,6 +63,14 @@ def counter_clockwise():
 	apply_changes()
 	#io.output(in1_pin, False)
 	#io.output(in2_pin, True)
+    
+def change_direction():
+    global bool1
+    global bool2
+    helpbool = bool1
+    bool1 = bool2
+    bool2 = helpbool
+    apply_changes()
 
 def stop_start():
 	global stoped
