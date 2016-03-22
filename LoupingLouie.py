@@ -76,7 +76,7 @@ def stop_start():
 
 def faster():
 	global speed
-	if speed == 0
+	if speed == 0:
 		speed = 20
 		stop_start()
 	else:
@@ -134,7 +134,7 @@ while PLAY:
 		if (io.input(in5_pin) == False and io.input(in4_pin) == True):
 			slower()
 
-	elif (program == 2 or program == 3)
+	elif (program == 2 or program == 3):
 		print ("Time till next speed change: " + str(time_till_next_speed_change - time_passed % time_till_next_speed_change))
 		
 		if ((time_passed % time_till_next_speed_change) == 0):
@@ -146,7 +146,7 @@ while PLAY:
 					time_till_next_speed_change = 0.5
 				else:
 					stop_start()
-			else
+			else:
 				if stoped:
 					stop_start()
 				else:
